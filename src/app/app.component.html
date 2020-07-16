@@ -1,0 +1,16 @@
+<div>
+  <nav class="nav">
+    <a href="/"><img class="nav__logo" src="assets/png/logo.png" alt="Keyway" width="190px"/></a>
+    <!-- <a routerLink="/cart" routerLinkActive="active">View Cart</a> -->
+    <button (click)="viewCart(cart)">
+      View Cart <app-badge [count]='cart.length'></app-badge>
+    </button>
+    <!-- View cart {{cart.length > 0 ? cart.length : ""}} -->
+  </nav>
+
+  <!-- <router-outlet></router-outlet> -->
+  <app-products-list (appCart)="cartData($event)"></app-products-list>
+  <!-- <footer class="footer">
+    <p>Made with ❤ by Snipcart with Angular, Sanity and Netlify. See the <a class="link--external" href="https://github.com/snipcart/snipcart-keyway">Github repo</a> and <a class="link--external" href="https://snipcart.com/blog/headless-angular-ecommerce-app">tutorial</a>.</p>
+  </footer> -->
+</div>

@@ -1,0 +1,10 @@
+<figure class="product">
+  <img [src]="product.image"/>
+
+  <figcaption>
+    <h3 class="product__name">{{ product.name }} <span class="product__price">{{ product.price }}$</span></h3>
+    <button class="button button--buy snipcart-add-item" (click)="addToCart(product)">
+      Add to cart
+    </button>
+  </figcaption>
+</figure>

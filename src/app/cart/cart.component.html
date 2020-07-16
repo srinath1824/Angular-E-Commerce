@@ -1,0 +1,11 @@
+
+<div *ngFor="let product of data">
+<mat-card id="card">
+    <mat-grid-list cols="3" rowHeight="2:1">
+        <mat-grid-tile><img src={{product.image}} [ngStyle]="{'border-radius': '10%' , 'width' : '70px', 'height': '70px', 'display': 'inline-block' }"/></mat-grid-tile>
+        <mat-grid-tile>{{product.description}}</mat-grid-tile>
+        <mat-grid-tile>{{product.price}}$</mat-grid-tile>
+      </mat-grid-list>
+</mat-card>
+
+</div>
