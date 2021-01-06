@@ -24,7 +24,7 @@
     "@sanity/block-content-to-html": "^1.3.8",
     "@sanity/client": "^0.140.32",
     "@sanity/image-url": "^0.140.12",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "express": "^4.17.1",
     "hammerjs": "^2.0.8",
     "rxjs": "~6.4.0",
